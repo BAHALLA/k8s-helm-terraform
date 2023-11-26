@@ -1,0 +1,36 @@
+
+configuration:
+  micronaut:
+    security:
+      enabled: true
+      default-group: no-roles
+      token:
+      jwt:
+        signatures:
+          secret:
+            generator:
+              secret: changeme
+  akhq:
+    security:
+      enabled: true
+      default-group: no-roles        
+      basic-auth:
+        - username: pass
+          password: d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+          groups:
+            - admin
+        - username: pass
+          password: d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1
+          groups:
+            - reader
+    server:
+      access-log:
+        enabled: true
+        name: org.akhq.log.access
+    connections:
+      my-cluster:
+        properties:
+          bootstrap.servers: 192.168.49.2:30812
+
+service:
+  type: NodePort
