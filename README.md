@@ -8,8 +8,6 @@ This repository contains samples to deploy in k8s cluster using Terraform and He
 
 ## Deploying AKHQ UI
 
-[Akhq installation doc](https://akhq.io/docs/installation.html#running-in-kubernetes-using-a-helm-chart)
-
 To run this example:
 ```shell
 terraform init
