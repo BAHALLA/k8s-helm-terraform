@@ -4,7 +4,7 @@ This repository contains samples to deploy in k8s cluster using Terraform and He
 
 ## Prerequisites
 * Having a working k8s cluster, you can setup one with [minikube](https://minikube.sigs.k8s.io/docs/)
-* Deploy a kafka cluster in k8s cluster, you can set up easily a cluster using [strimzi operator](https://strimzi.io/quickstarts/)
+* Deploy a kafka cluster in k8s, you can set up a cluster easily with [strimzi operator](https://strimzi.io/quickstarts/)
 
 ## Deploying AKHQ UI
 
