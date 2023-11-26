@@ -1,6 +1,6 @@
-# This repository contains samples to deploy in k8s cluster using Terraform and Helm provider
+# K8s - Terraform - Helm
 
-* Refer to [official doc of Helm provider for more information](https://registry.terraform.io/providers/hashicorp/helm/latest/docs)
+This repository contains samples to deploy in k8s cluster using Terraform and Helm provider, please refer to [the official doc for Helm provider](https://registry.terraform.io/providers/hashicorp/helm/latest/docs)
 
 ## Deploying AKHQ UI 
 
