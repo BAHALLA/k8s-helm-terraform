@@ -30,7 +30,7 @@ configuration:
     connections:
       my-cluster:
         properties:
-          bootstrap.servers: 192.168.49.2:30812
+          bootstrap.servers: 192.168.49.2:32213
 
 service:
   type: NodePort
