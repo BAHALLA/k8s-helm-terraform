@@ -4,6 +4,7 @@ resource "helm_release" "akhq" {
   namespace  = "operations"
   repository = "https://akhq.io/"
   chart      = "akhq"
+  version    = var.software_versions["akhq"]
 
   create_namespace = true
 
