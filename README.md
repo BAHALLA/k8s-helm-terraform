@@ -1,12 +1,12 @@
 # K8s - Terraform - Helm
 
-This repository contains samples to deploy in k8s cluster using Terraform and Helm provider, please refer to [the official doc for Helm provider](https://registry.terraform.io/providers/hashicorp/helm/latest/docs)
+This repository contains examples of deploying infra components into k8s cluster, using Terraform and Helm provider, please refer to [the official doc for Helm provider](https://registry.terraform.io/providers/hashicorp/helm/latest/docs)
 
 Deployed components :
 
-- Apache kafka clsuer
-- Akhq (kafka ui tool)
-- cert-manager
+- Apache kafka cluster
+- AKHQ (kafka ui tool)
+- Cert Manager
 
 ## Prerequisites
 * Having a working k8s cluster, you can setup one with [minikube](https://minikube.sigs.k8s.io/docs/)
