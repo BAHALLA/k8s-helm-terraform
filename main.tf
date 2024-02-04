@@ -63,8 +63,13 @@ resource "kubernetes_manifest" "kafka" {
           {
             "name" = "external"
             "port" = 9094
-            "tls"  = false
+            "tls"  = true
             "type" = "nodeport"
+            "configuration" = {
+              "bootstrap" = {
+                "alternativeNames" = ["192.168.49.2"]
+              }
+            }
           },
         ]
         "replicas" = 1
