@@ -97,4 +97,6 @@ resource "kubernetes_manifest" "kafka" {
     }
 
   }
+
+  depends_on = [helm_release.strimzi]
 }
