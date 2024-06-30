@@ -1,4 +1,4 @@
-resource "kubernetes_manifest" "schema_registry" {
+resource "kubernetes_manifest" "schema_registry_deploy" {
   manifest = {
     "apiVersion" = "apps/v1"
     "kind"       = "Deployment"
@@ -46,6 +46,31 @@ resource "kubernetes_manifest" "schema_registry" {
           ]
         }
       }
+    }
+  }
+}
+
+resource "kubernetes_manifest" "schema_registry_svc" {
+  manifest = {
+    "apiVersion" = "v1"
+    "kind"       = "Service"
+    "metadata" = {
+      "name"      = "schema-registry"
+      "namespace" = "strimzi"
+    }
+    "spec" = {
+      "type" = "NodePort"
+      "ports" = [
+        {
+          "port"       = 8081
+          "protocol"   = "TCP"
+          "targetPort" = 8081
+        },
+      ]
+      "selector" = {
+        "app" = "schema-registry"
+      }
+
     }
   }
 }
