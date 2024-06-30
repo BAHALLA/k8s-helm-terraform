@@ -28,7 +28,7 @@ resource "kubernetes_manifest" "schema_registry" {
               "env" = [
                 {
                   "name"  = "SCHEMA_REGISTRY_KAFKA_BROKERS"
-                  "value" = "my-cluster-kafka-bootstrap.strimzi:9092"
+                  "value" = "PLAINTEXT://my-cluster-kafka-bootstrap.strimzi:9092"
                 },
                 {
                   "name"  = "SCHEMA_REGISTRY_DEBUG"
