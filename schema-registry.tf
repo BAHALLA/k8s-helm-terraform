@@ -1,4 +1,5 @@
 resource "kubernetes_manifest" "schema_registry_deploy" {
+  depends_on = [helm_release.strimzi]
   manifest = {
     "apiVersion" = "apps/v1"
     "kind"       = "Deployment"
