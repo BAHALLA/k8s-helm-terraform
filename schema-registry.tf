@@ -66,6 +66,7 @@ resource "kubernetes_manifest" "schema_registry_svc" {
           "port"       = 8081
           "protocol"   = "TCP"
           "targetPort" = 8081
+          "nodePort"   = 30007
         },
       ]
       "selector" = {

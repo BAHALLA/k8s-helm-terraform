@@ -68,6 +68,7 @@ resource "kubernetes_manifest" "kafka" {
             "configuration" = {
               "bootstrap" = {
                 "alternativeNames" = ["192.168.49.2"]
+                "nodePort"         = 30663
               }
             }
           },

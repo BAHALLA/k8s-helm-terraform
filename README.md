@@ -7,6 +7,7 @@ Deployed components :
 - Apache kafka cluster
 - AKHQ (kafka ui tool)
 - Cert Manager
+- Schema registry
 
 ## Prerequisites
 * Having a working k8s cluster, you can setup one with [minikube](https://minikube.sigs.k8s.io/docs/)
